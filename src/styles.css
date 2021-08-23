@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+/* This is the syling for the page*/
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: whitesmoke;
+}
+
+.mainHeading {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  max-width: 900px;
+  display: block;
+  font-family: "Lato";
+}
+
+.resultWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .resultWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 65%;
+  }
+}
+
+.previewLink button {
+  margin: 1rem;
+  padding: 0.3rem;
+  background-color: rgb(102, 237, 255);
+  border-radius: 0.5rem;
+  border: 1px hidden blue;
+}
+
+.likeButton {
+  padding: 0.3rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+
+nav {
+  margin: 1.5rem;
+  padding: 0.5rem;
+}
